@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+	<!-- 关闭动态方法调用 -->
+	<constant name="struts.enable.DynamicMethodInvocation" value="false" />
+	<!-- 开启开发模式 -->
+	<constant name="struts.devMode" value="true" />
+
+	<package name="default" namespace="/" extends="struts-default">
+
+		<action name="user_*" class="userAction" method="{1}">
+			<!-- 列表显示 -->
+			<result>/WEB-INF/pages/userList.jsp</result>
+			<!-- 新增/编辑页面显示 -->
+			<result name="input">/WEB-INF/pages/userInput.jsp</result>
+			<!-- 保存或者删除之后进行重定向 -->
+			<result name="redirect" type="redirectAction">user</result>
+		</action>
+
+	</package>
+
+
+</struts>

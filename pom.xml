@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.jege.framework</groupId>
+	<artifactId>framework-tutorial</artifactId>
+	<packaging>pom</packaging>
+	<version>1.0.0.RELEASE</version>
+
+	<name>framework-tutorial</name>
+	<url>http://blog.csdn.net/je_ge</url>
+
+	<developers>
+		<developer>
+			<id>je_ge</id>
+			<name>je_ge</name>
+			<email>1272434821@qq.com</email>
+			<url>http://blog.csdn.net/je_ge</url>
+			<timezone>8</timezone>
+		</developer>
+	</developers>
+
+	<modules>
+		<module>struts2-spring3-hibernate3-xml</module>
+		<module>struts2-spring3-hibernate3-annotation</module>
+		<module>struts2-spring4-hibernate4-annotation</module>
+		<module>springmvc4-spring4-hibernate4-annotation</module>
+		<module>springmvc4-spring4-hibernate4-javaconfig</module>
+	</modules>
+
+
+</project>

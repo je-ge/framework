@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+			http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="userDAO" class="com.jege.ssh.dao.impl.UserDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+
+	<bean id="userService" class="com.jege.ssh.service.impl.UserServiceImpl">
+		<property name="userDAO" ref="userDAO" />
+	</bean>
+
+	<bean id="userAction" class="com.jege.ssh.action.UserAction" scope="prototype">
+		<property name="userService" ref="userService" />
+	</bean>
+
+</beans>
