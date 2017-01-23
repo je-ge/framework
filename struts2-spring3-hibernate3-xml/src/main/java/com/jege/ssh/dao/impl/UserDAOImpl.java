@@ -10,7 +10,7 @@ import com.jege.ssh.entity.User;
 /**
  * @author JE哥
  * @email 1272434821@qq.com
- * @description:
+ * @description:dao接口实现
  */
 public class UserDAOImpl extends HibernateDaoSupport implements UserDAO {
 
